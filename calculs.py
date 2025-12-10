@@ -1,6 +1,9 @@
+poids = 70
+taille = 1.70
+
 def calculer_imc(poids, taille):
    # IMC = poids / taille²
-    return poids / taille**2
+    return int(poids / taille**2)
 
 def interpreter_imc(imc):
 
@@ -16,8 +19,13 @@ def interpreter_imc(imc):
         case surpoids if 25 <= imc < 30:
             return "Surpoids"
 
-        case normal if 30 <= imc < 40:
+        case obesite_moderee if 30 <= imc < 40:
             return "Obésité modérée"
 
-        case maigre if imc <= 40:
+        case obesitee_severe if imc <= 40:
             return "Obésité sévère"
+        
+imc = calculer_imc(poids,taille)
+stats = interpreter_imc(imc)
+print(imc)
+print(stats)
