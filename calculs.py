@@ -19,6 +19,6 @@ def interpreter_imc(imc):
         case obesite_moderee if 30 <= imc < 40:
             return "Obésité modérée"
 
-        case obesitee_severe if imc <= 40:
+        case obesitee_severe if imc >= 40:
             return "Obésité sévère"
         
