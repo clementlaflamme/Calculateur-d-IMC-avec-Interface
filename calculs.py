@@ -1,6 +1,3 @@
-poids = 70
-taille = 1.70
-
 def calculer_imc(poids, taille):
    # IMC = poids / taille²
     return int(poids / taille**2)
@@ -25,7 +22,3 @@ def interpreter_imc(imc):
         case obesitee_severe if imc <= 40:
             return "Obésité sévère"
         
-imc = calculer_imc(poids,taille)
-stats = interpreter_imc(imc)
-print(imc)
-print(stats)
