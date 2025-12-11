@@ -1,5 +1,5 @@
 def calculer_imc(poids, taille):
-   # IMC = poids / taille²
+   # IMC = poids(KG) / taille(metre ex.: 1.68)²
     return int(poids / taille**2)
 
 def interpreter_imc(imc):

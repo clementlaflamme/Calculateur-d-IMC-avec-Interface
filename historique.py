@@ -1,4 +1,5 @@
 # sauvegarde dans un fichier au format nom.txt
+
 def sauvegarder_calcul(nom, imc):
     file = open(f"{nom}.txt", 'w')
     file.write(f"""=-=-= Calcul de l'IMC =-=-=\n
@@ -10,7 +11,7 @@ def sauvegarder_calcul(nom, imc):
 # lecture d'un fichier créé précédemment
 def afficher_historique(file):
     file = open(file)
-    print(file.read())
+    # print(file.read())
     file.close()
 
 # #tests
