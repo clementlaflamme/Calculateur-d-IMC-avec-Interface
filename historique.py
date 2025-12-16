@@ -1,9 +1,9 @@
 # sauvegarde dans un fichier au format nom.txt
 def sauvegarder_calcul(nom, imc):
     file = open(f"{nom}.txt", 'w')
-    file.write(f"""=-=-= Calcul de l'IMC =-=-=\n
+    file.write(f"""\n=-=-= Calcul de l'IMC =-=-=\n
     Nom: {nom}
-    IMC: {imc}
+    IMC: {imc:.2f}
     """)
     file.close()
 
