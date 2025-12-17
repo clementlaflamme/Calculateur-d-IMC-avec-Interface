@@ -2,18 +2,21 @@ import calculs
 import historique
 import interface
 
-#   *** MAIN ***
-
-# Gestion de l'interface
+# Demande des infos une seule fois
 nom, poids, taille = interface.demander_infos()
 
-# Gestion des calculs ** poids en KG et taille en metre(1.68)
+# Calcul de l'IMC
 imc = calculs.calculer_imc(poids, taille)
+
+# Interprétation
 stat = calculs.interpreter_imc(imc)
 
-# Afficher Résultat
+# Affichage
 interface.afficher_resultat(nom, imc, stat)
 
-# Gestion de la sauvegarde
+# Historique
+
 historique.sauvegarder_calcul(nom, imc)
-historique.afficher_historique(f"{nom}.txt")
+
+# historique.afficher_historique(f"{nom}.txt")
+

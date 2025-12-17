@@ -1,17 +1,14 @@
-import calculs 
-
-
-def demander_infos():
-    nom = input("Votre nom: ")
-    poids = input("Votre poid en kilogramme: ")
-    taille = input("Votre taille en metre: ")
-    return nom, poids, taille
 # Demande poids et taille
-
-
+def demander_infos():
+    nom = input("\nEntrer votre nom : ")
+    poids = float(input("Votre poid en kilogramme : "))
+    taille = float(input("Votre taille en metre : "))
+    return nom, poids, taille
 
 def afficher_resultat(nom, imc, stat):
-    print(f"{nom}, ton IMC est {imc:.2f} → {stat}")
-demander_infos()
-afficher_resultat()
-# Affiche joliment 
+    print(f"\n{nom}, ton IMC est de {imc:.2f} → {stat}")
+
+
+##TEST
+# demander_infos()
+# afficher_resultat()
